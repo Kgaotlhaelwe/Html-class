@@ -1,72 +1,351 @@
-
 <!DOCTYPE html>
+
+<!--
+=====================================================
+INTRODUCTION TO HTML
+=====================================================
+
+HTML = HyperText Markup Language
+
+HTML is used to create the structure of web pages.
+
+Examples of what HTML can create:
+- Headings
+- Paragraphs
+- Images
+- Tables
+- Forms
+- Videos
+- Audio
+
+Think of a website like a house:
+
+HTML  = Structure
+CSS   = Styling
+JavaScript = Functionality
+
+=====================================================
+-->
+
 <html>
 
 <head>
-<title>
-    Codetribe 2026-2027
-</title>
+
+    <!--
+    The title appears in the browser tab.
+    -->
+    <title>CodeTribe 2026-2027</title>
+
 </head>
 
 <body>
 
-<h1>Welcome to Codetribe 2026-2027</h1>
-<h2> About me</h2>
-<p>This is a brief introduction about me.</p>
+    <!-- ===================================================== -->
+    <!-- HEADINGS -->
+    <!-- ===================================================== -->
 
-<!-- Here are my hobbies -->
-<h3> Hobbies</h3>
-<ul>
-    <li>Coding</li>
-    <li>Traveling</li>
-    <li>Cooking</li>
-</ul>
-<h4> Skills</h4>
+    <!--
+    Headings range from h1 to h6.
 
-<ol>
-    <li> <b>Programming languages:</b> <i>Python, JavaScript, Java</i></li>
-    <li>Web development: HTML, CSS, React</li>
-    <li>Data analysis: SQL, Excel</li>
-</ol>
+    h1 = Largest heading
+    h6 = Smallest heading
 
-<form>
-    <input type="text"   placeholder="Enter your email"    /> <br>
-    <input type="password"   placeholder="Enter your password"    />
-    <button> Login</button>
+    Usually a page should only have one h1.
+    -->
 
-</form>
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Gender</th>
-    </tr>
+    <h1>Welcome to CodeTribe 2026-2027</h1>
 
-    <tr>
-        <td>Leigh-Rae</td>
-        <td>Booysen
-        <td>FEamle</td>
-        </td>
-    </tr>
 
-    <tr>
-        <td>Leigh-Rae</td>
-        <td>Booysen
-        <td>Female</td>
-        </td>
-    </tr>
-</table>
+    <!-- ===================================================== -->
+    <!-- PARAGRAPHS -->
+    <!-- ===================================================== -->
 
-<img src="./assets/Capture.PNG"  width="250" />
+    <!--
+    Paragraph tags are used to display text content.
+    -->
 
+    <h2>About Me</h2>
+
+    <p>
+        This is a brief introduction about me.
+    </p>
+
+
+    <!-- ===================================================== -->
+    <!-- UNORDERED LIST -->
+    <!-- ===================================================== -->
+
+    <!--
+    ul = Unordered List
+    li = List Item
+
+    Displays bullet points.
+    -->
+
+    <h3>Hobbies</h3>
+
+    <ul>
+
+        <li>Coding</li>
+
+        <li>Travelling</li>
+
+        <li>Cooking</li>
+
+    </ul>
+
+
+    <!-- ===================================================== -->
+    <!-- ORDERED LIST -->
+    <!-- ===================================================== -->
+
+    <!--
+    ol = Ordered List
+
+    Displays numbered items.
+    -->
+
+    <h3>Skills</h3>
+
+    <ol>
+
+        <li>
+            <!-- b = Bold -->
+            <b>Programming Languages:</b>
+
+            <!-- i = Italic -->
+            <i>Python, JavaScript, Java</i>
+        </li>
+
+        <li>
+            Web Development:
+            HTML, CSS, React
+        </li>
+
+        <li>
+            Data Analysis:
+            SQL, Excel
+        </li>
+
+    </ol>
+
+
+    <!-- ===================================================== -->
+    <!-- FORMS -->
+    <!-- ===================================================== -->
+
+    <!--
+    Forms are used to collect information from users.
+
+    Common input types:
+    text
+    email
+    password
+    number
+    date
+    -->
+
+    <h3>Login Form</h3>
+
+    <form>
+
+        <!-- Form Label -->
+        <label>Email Address</label>
+
+        <br>
+
+        <!-- Email Input -->
+        <input
+            type="email"
+            placeholder="Enter your email"
+        />
+
+        <br>
+        <br>
+
+        <label>Password</label>
+
+        <br>
+
+        <!-- Password Input -->
+        <input
+            type="password"
+            placeholder="Enter your password"
+        />
+
+        <br>
+        <br>
+
+        <!-- Button -->
+        <button>
+            Login
+        </button>
+
+    </form>
+
+
+    <!-- ===================================================== -->
+    <!-- TABLES -->
+    <!-- ===================================================== -->
+
+    <!--
+    Tables are used to display data in rows and columns.
+
+    table = Creates table
+    tr    = Table Row
+    th    = Table Heading
+    td    = Table Data
+    -->
+
+    <h3>Student Information</h3>
+
+    <table border="1">
+
+        <tr>
+
+            <th>Name</th>
+
+            <th>Surname</th>
+
+            <th>Gender</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Leigh-Rae</td>
+
+            <td>Booysen</td>
+
+            <td>Female</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Kabelo</td>
+
+            <td>Gaotlhaelwe</td>
+
+            <td>Male</td>
+
+        </tr>
+
+    </table>
+
+
+    <!-- ===================================================== -->
+    <!-- IMAGES -->
+    <!-- ===================================================== -->
+
+    <!--
+    Images are displayed using the img tag.
+
+    src = Image location
+
+    alt = Alternative text displayed if image fails to load
+
+    width = Image width
+
+    height = Image height
+    -->
+
+    <h3>Profile Picture</h3>
+
+    <img
+        src="./assets/Capture.PNG"
+        alt="Profile Picture"
+        width="250"
+    />
+
+
+    <!-- ===================================================== -->
+    <!-- AUDIO -->
+    <!-- ===================================================== -->
+
+    <!--
+    Audio tag allows users to play music or sounds.
+
+    controls attribute displays:
+    - Play button
+    - Pause button
+    - Volume control
+    -->
+
+    <h3>Audio Example</h3>
 
     <audio controls>
-  <source src="song.mp3" type="audio/mpeg">
-</audio>
 
-<video width="400" controls>
-  <source src="./assets/video/2024-07-03 21-41-46.mkv" type="video/mp4">
-</video>
+        <source
+            src="song.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- ===================================================== -->
+    <!-- VIDEO -->
+    <!-- ===================================================== -->
+
+    <!--
+    Video tag allows users to watch videos.
+
+    width controls the video size.
+
+    controls attribute displays:
+    - Play button
+    - Pause button
+    - Timeline
+    - Volume control
+    -->
+
+    <h3>Video Example</h3>
+
+    <video width="400" controls>
+
+        <source
+            src="./assets/video/sample.mp4"
+            type="video/mp4">
+
+    </video>
+
+
+    <!-- ===================================================== -->
+    <!-- HTML REVISION NOTES -->
+    <!-- ===================================================== -->
+
+    <!--
+    COMMON HTML TAGS
+
+    html     = Root element
+    head     = Page information
+    title    = Browser tab title
+    body     = Visible page content
+
+    h1-h6    = Headings
+    p        = Paragraph
+    b        = Bold
+    i        = Italic
+
+    ul       = Unordered list
+    ol       = Ordered list
+    li       = List item
+
+    form     = Form
+    input    = Input field
+    button   = Button
+
+    table    = Table
+    tr       = Table row
+    th       = Table heading
+    td       = Table data
+
+    img      = Image
+    audio    = Audio player
+    video    = Video player
+
+    br       = Line break
+    -->
 
 </body>
 

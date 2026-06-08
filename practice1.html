@@ -1,35 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
+
+<!--
+=====================================================
+HTML5 SEMANTIC ELEMENTS
+=====================================================
+
+Semantic elements clearly describe their meaning.
+
+Before HTML5, developers used many div tags.
+
+Example:
+
+<div>
+    <div>
+        <div>
+        </div>
+    </div>
+</div>
+
+HTML5 introduced semantic tags that make
+code easier to read and maintain.
+
+Examples:
+
+header
+nav
+main
+section
+article
+aside
+footer
+
+=====================================================
+-->
 
 <html>
-  <head> </head>
 
-  <body>
+<head>
+
+    <!-- Page title displayed in browser tab -->
+    <title>HTML5 Semantic Elements</title>
+
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- HEADER -->
+    <!-- ===================================================== -->
+
+    <!--
+    The header usually contains:
+
+    - Website logo
+    - Website title
+    - Navigation menu
+    -->
+
     <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Bio</li>
-          <li>Skill</li>
-          <li>Projects</li>
-        </ul>
-      </nav>
+
+        <h1>My Portfolio Website</h1>
+
+        <!-- ================================================= -->
+        <!-- NAVIGATION -->
+        <!-- ================================================= -->
+
+        <!--
+        nav = Navigation section
+
+        Contains links or menu items
+        that help users move around
+        the website.
+        -->
+
+        <nav>
+
+            <ul>
+
+                <li>Home</li>
+
+                <li>Bio</li>
+
+                <li>Skills</li>
+
+                <li>Projects</li>
+
+            </ul>
+
+        </nav>
+
     </header>
+
+
+    <!-- ===================================================== -->
+    <!-- MAIN -->
+    <!-- ===================================================== -->
+
+    <!--
+    main = The primary content
+    of the webpage.
+
+    A page should only have one
+    main element.
+    -->
+
     <main>
-      <section>
-        <audio controls>
-            <source src="song.mp3" type="audio/mpeg"> 
-        </audio>
-      </section>
 
-      <section>
-        <video controls width="200">
-            <source src="./assets/video/2024-07-03 21-41-46.mkv" >
-        </video>
-      </section>
+        <!-- ================================================= -->
+        <!-- SECTION 1 -->
+        <!-- ================================================= -->
 
-      <aside></aside>
+        <!--
+        section = Groups related content
+        together.
+        -->
+
+        <section>
+
+            <h2>Favourite Song</h2>
+
+            <!--
+            Audio element
+
+            controls attribute displays:
+            - Play button
+            - Pause button
+            - Volume controls
+            -->
+
+            <audio controls>
+
+                <source
+                    src="song.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- SECTION 2 -->
+        <!-- ================================================= -->
+
+        <section>
+
+            <h2>Favourite Video</h2>
+
+            <!--
+            Video element
+
+            controls = play/pause controls
+
+            width = video width
+            -->
+
+            <video width="300" controls>
+
+                <source
+                    src="./assets/video/sample.mp4"
+                    type="video/mp4">
+
+            </video>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- ASIDE -->
+        <!-- ================================================= -->
+
+        <!--
+        aside = Content related to the page
+        but not part of the main content.
+
+        Examples:
+
+        - Advertisements
+        - Quick links
+        - Author information
+        - Recent posts
+        -->
+
+        <aside>
+
+            <h3>Quick Facts</h3>
+
+            <ul>
+
+                <li>Learning HTML</li>
+
+                <li>Learning CSS</li>
+
+                <li>Learning JavaScript</li>
+
+            </ul>
+
+        </aside>
+
     </main>
 
-    <footer></footer>
-  </body>
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <!--
+    footer = Bottom section of website
+
+    Usually contains:
+
+    - Copyright information
+    - Contact details
+    - Social media links
+    - Privacy policy
+    -->
+
+    <footer>
+
+        <p>
+            Copyright © 2026 CodeTribe.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
 </html>
