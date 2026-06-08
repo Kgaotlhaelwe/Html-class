@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<!--
+=====================================================
+INTRODUCTION TO HTML
+=====================================================
+
+HTML = HyperText Markup Language
+
+HTML is used to create the structure of web pages.
+
+Think of a website as a house:
+
+HTML  = Structure
+CSS   = Design / Styling
+JavaScript = Functionality
+
+This file demonstrates the most common HTML elements
+used by beginner web developers.
+
+=====================================================
+BASIC HTML STRUCTURE
+=====================================================
+
+<!DOCTYPE html>  -> Tells browser we are using HTML5
+
+<html>           -> Root element
+
+<head>           -> Contains information about page
+
+<title>          -> Title shown in browser tab
+
+<body>           -> Visible content shown to users
+
+=====================================================
+-->
+
+<html>
+
+<head>
+
+    <!-- Title shown in browser tab -->
+    <title>HTML Beginner Guide</title>
+
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- HEADINGS -->
+    <!-- ===================================================== -->
+
+    <!--
+    HTML provides six heading levels.
+
+    h1 = Largest heading
+    h6 = Smallest heading
+
+    Normally a page should have only one h1.
+    -->
+
+    <h1>Introduction to HTML</h1>
+
+    <h2>Heading Level 2</h2>
+
+    <h3>Heading Level 3</h3>
+
+    <h4>Heading Level 4</h4>
+
+    <h5>Heading Level 5</h5>
+
+    <h6>Heading Level 6</h6>
+
+
+    <!-- ===================================================== -->
+    <!-- PARAGRAPHS -->
+    <!-- ===================================================== -->
+
+    <!--
+    Paragraphs are used to display text.
+    -->
+
+    <h2>Paragraph Example</h2>
+
+    <p>
+        My name is Kabelo. I am learning HTML,
+        CSS and JavaScript.
+    </p>
+
+
+    <!-- ===================================================== -->
+    <!-- TEXT FORMATTING -->
+    <!-- ===================================================== -->
+
+    <h2>Text Formatting</h2>
+
+    <p>
+        <b>Bold Text</b>
+    </p>
+
+    <p>
+        <strong>Important Text</strong>
+    </p>
+
+    <p>
+        <i>Italic Text</i>
+    </p>
+
+    <p>
+        <u>Underlined Text</u>
+    </p>
+
+
+    <!-- ===================================================== -->
+    <!-- HOBBIES - UNORDERED LIST -->
+    <!-- ===================================================== -->
+
+    <!--
+    ul = Unordered List
+    li = List Item
+
+    Displays bullet points.
+    -->
+
+    <h2>My Hobbies</h2>
+
+    <ul>
+
+        <li>Watching Movies</li>
+
+        <li>Coding</li>
+
+        <li>Cooking</li>
+
+        <li>Gaming</li>
+
+        <li>Reading</li>
+
+    </ul>
+
+
+    <!-- ===================================================== -->
+    <!-- SKILLS - ORDERED LIST -->
+    <!-- ===================================================== -->
+
+    <!--
+    ol = Ordered List
+
+    Displays numbered items.
+    -->
+
+    <h2>My Skills</h2>
+
+    <ol>
+
+        <li>HTML</li>
+
+        <li>CSS</li>
+
+        <li>JavaScript</li>
+
+        <li>SQL</li>
+
+        <li>Python</li>
+
+    </ol>
+
+
+    <!-- ===================================================== -->
+    <!-- LINKS -->
+    <!-- ===================================================== -->
+
+    <!--
+    Anchor tag (<a>) is used to create hyperlinks.
+    -->
+
+    <h2>Useful Links</h2>
+
+    <a href="https://github.com">
+        Visit GitHub
+    </a>
+
+    <br>
+    <br>
+
+    <a href="https://google.com">
+        Visit Google
+    </a>
+
+
+    <!-- ===================================================== -->
+    <!-- IMAGES -->
+    <!-- ===================================================== -->
+
+    <!--
+    src = image location
+    alt = alternative text
+    width = image width
+    height = image height
+    -->
+
+    <h2>Profile Picture</h2>
+
+    <img
+        src="./assets/Capture.PNG"
+        alt="Profile Picture"
+        width="250"
+        height="200"
+    />
+
+
+    <!-- ===================================================== -->
+    <!-- TABLES -->
+    <!-- ===================================================== -->
+
+    <!--
+    table = creates table
+    tr    = table row
+    th    = table heading
+    td    = table data
+    -->
+
+    <h2>Student Information</h2>
+
+    <table border="1">
+
+        <tr>
+
+            <th>Full Name</th>
+
+            <th>Gender</th>
+
+            <th>Age</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Kabelo</td>
+
+            <td>Male</td>
+
+            <td>24</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Lerato</td>
+
+            <td>Female</td>
+
+            <td>22</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Thabo</td>
+
+            <td>Male</td>
+
+            <td>25</td>
+
+        </tr>
+
+    </table>
+
+
+    <!-- ===================================================== -->
+    <!-- DROPDOWN LIST -->
+    <!-- ===================================================== -->
+
+    <!--
+    select = dropdown
+
+    option = dropdown item
+    -->
+
+    <h2>Select Your Favourite Car</h2>
+
+    <select>
+
+        <option>BMW</option>
+
+        <option>Mercedes-Benz</option>
+
+        <option>Volkswagen</option>
+
+        <option>Ford</option>
+
+        <option>Toyota</option>
+
+    </select>
+
+
+    <!-- ===================================================== -->
+    <!-- FORMS -->
+    <!-- ===================================================== -->
+
+    <!--
+    Forms are used to collect information from users.
+    -->
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Full Name</label>
+
+        <br>
+
+        <input
+            type="text"
+            placeholder="Enter your full name"
+        >
+
+        <br>
+        <br>
+
+        <label>Email Address</label>
+
+        <br>
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+        >
+
+        <br>
+        <br>
+
+        <label>Password</label>
+
+        <br>
+
+        <input
+            type="password"
+            placeholder="Enter password"
+        >
+
+        <br>
+        <br>
+
+        <label>Date of Birth</label>
+
+        <br>
+
+        <input
+            type="date"
+        >
+
+        <br>
+        <br>
+
+        <label>Age</label>
+
+        <br>
+
+        <input
+            type="number"
+        >
+
+        <br>
+        <br>
+
+        <button>
+            Register
+        </button>
+
+    </form>
+
+
+    <!-- ===================================================== -->
+    <!-- LINE BREAKS -->
+    <!-- ===================================================== -->
+
+    <!--
+    br = line break
+
+    Moves content to a new line.
+    -->
+
+    <h2>Line Break Example</h2>
+
+    <p>
+        HTML <br>
+        CSS <br>
+        JavaScript
+    </p>
+
+
+    <!-- ===================================================== -->
+    <!-- HORIZONTAL LINE -->
+    <!-- ===================================================== -->
+
+    <!--
+    hr = horizontal line
+    -->
+
+    <hr>
+
+
+    <!-- ===================================================== -->
+    <!-- HTML REVISION NOTES -->
+    <!-- ===================================================== -->
+
+    <h2>HTML Revision Summary</h2>
+
+    <p>
+
+        HTML stands for HyperText Markup Language.
+
+        HTML is used to create the structure of web pages.
+
+        Common tags learned:
+
+    </p>
+
+    <ul>
+
+        <li>html</li>
+
+        <li>head</li>
+
+        <li>title</li>
+
+        <li>body</li>
+
+        <li>h1 - h6</li>
+
+        <li>p</li>
+
+        <li>ul</li>
+
+        <li>ol</li>
+
+        <li>li</li>
+
+        <li>table</li>
+
+        <li>img</li>
+
+        <li>a</li>
+
+        <li>form</li>
+
+        <li>input</li>
+
+        <li>button</li>
+
+        <li>select</li>
+
+        <li>option</li>
+
+    </ul>
+
+
+    <!-- ===================================================== -->
+    <!-- STUDENT ACTIVITY -->
+    <!-- ===================================================== -->
+
+    <h2>Practical Activity</h2>
+
+    <p>
+        Create your own profile page that includes:
+    </p>
+
+    <ol>
+
+        <li>Your name</li>
+
+        <li>A paragraph about yourself</li>
+
+        <li>Five hobbies</li>
+
+        <li>Five skills</li>
+
+        <li>A profile picture</li>
+
+        <li>A table with three friends</li>
+
+        <li>A link to your favourite website</li>
+
+        <li>A registration form</li>
+
+    </ol>
+
+</body>
+
+</html>
